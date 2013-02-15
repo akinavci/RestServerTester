@@ -1,0 +1,6 @@
+{
+	"requestType" : "GET",
+	"command" : "user/QTS/task/ready",
+	"body" : {
+	}
+}

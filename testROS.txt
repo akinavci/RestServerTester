@@ -1,0 +1,23 @@
+*** Settings ***
+Library           OperatingSystem
+Library           RosTester.py
+
+*** Variables ***
+${baseUri}        http://localhost:8080/irdeto-jbpm-app/ws/rs/
+
+*** Test Cases ***
+Get all tasks for Administrator User
+    Send Request    ${baseUri}    GET    task/any/all/user/Administrator
+    Check Response    responseFiles/response1.json
+
+Get all tasks for QA User
+    Send Request    ${baseUri}    GET    task/any/all/user/QA
+    Check Response    responseFiles/response2.json
+
+Get all automated tasks
+    Send Request    ${baseUri}    GET    task/auto/all/
+    Check Response    responseFiles/response3.json
+
+Get ready and working automated tasks
+    Send Request    ${baseUri}    GET    task/auto/Ready/InProgress
+    Check Response    responseFiles/response4.json

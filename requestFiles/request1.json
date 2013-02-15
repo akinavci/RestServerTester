@@ -1,0 +1,6 @@
+{
+	"requestType" : "GET",
+	"command" : "task/any/all/user/Administrator",
+	"body" : {
+	}
+}

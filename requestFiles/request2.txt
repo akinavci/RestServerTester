@@ -1,0 +1,5 @@
+{
+	"requestType" : "GET",
+	"command" : "movieSubcontent/entities/50ae12ff5bfb12ef19000007",
+	"body" : {}
+}
